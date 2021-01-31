@@ -1,0 +1,612 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>دانلود بازی drift max pro car برای اندروید + مود</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="{% static 'apps/assets/images/favicon.ico' %}"/>
+    <!-- Font Awesome -->
+    <link href="{% static 'apps/assets/css/font-awesome.css' %}" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="{% static 'apps/assets/css/bootstrap.css' %}" rel="stylesheet">    
+    <link href="{% static 'apps/assets/css/bootstrap-rtl.min.css' %}" rel="stylesheet">    
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="{% static 'apps/assets/css/slick.css' %}"/> 
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="{% static 'apps/assets/css/jquery.fancybox.css' %}" type="text/css" media="screen" /> 
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'apps/assets/css/animate.css' %}"/>  
+     <!-- Theme color -->
+    <link id="switcher" href="{% static 'apps/assets/css/theme-color/default-theme.css' %}" rel="stylesheet">
+    <!-- Main Style -->
+    <link href="{% static 'apps/style.css' %}" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>  
+<!-- BEGAIN PRELOADER -->
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  <!-- END PRELOADER -->
+  
+  <!-- Start menu area -->
+  <div class="nav-area">      
+    <a id="menu-btn" href="#"><i class="fa fa-bars"></i></a>
+    <nav class="main-nav" id="main-menu">
+      <span class="fa fa-remove" id="close"></span>
+      <ul>  
+        <li> <a href="#header"><i class="fa fa-home"></i><span>خانه</span></a></li>
+        <li><a href="#features"><i class="fa fa-server"></i><span>امکانات</span></a></li>
+        <li><a href="#howit-works"><i class="fa fa-hourglass"></i><span>چگونه کار می کند؟</span></a></li>
+        <li><a href="#pricing-table"><i class="fa fa-usd"></i><span>قیمت</span></a></li>
+        <li><a href="#screenshot"><i class="fa fa-image"></i><span>تصاویر اپلیکیشن</span></a></li>
+        <li><a href="#download-app"><i class="fa fa-download"></i><span>دانلود</span></a></li>
+        <li><a href="#testimonial"><i class="fa fa-certificate"></i><span>راهنما ها</span></a></li>
+        <li><a href="#contact"><i class="fa fa-envelope-o"></i><span>ارتباط با ما</span></a></li>          
+      </ul>      
+    </nav>
+  </div>  
+  <!-- End menu area -->
+
+  <!-- Start header section --> 
+  <header id="header">
+    <div class="header-inner">
+      <!-- Header image -->
+      <img src="{% static 'apps/assets/images/car.jpg' %}" alt="img">
+      <div class="overlay">
+        <div class="header-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="header-top">
+                  <!-- Start logo area -->
+                  <div class="logo-area">
+                    <!-- Image based logo -->
+                    <a class="logo" href="{% url 'home' %}"><img src="{% static 'apps/assets/images/logo.png' %}" alt="logo"></a>
+                    <!-- Text based logo -->
+                    <!-- <a class="logo" href="index.html">App Landy.</a> -->
+                  </div>
+                  <!-- End logo area -->                 
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="header-bottom">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <div class="header-bottom-left">
+                      <h1>دانلود بازی "دریفت مکس پرو کار" برای اندروید</h1>
+                      <p>دانلود بازی مهیج عالی و مخصوص ماشین باز ها . این بازی مود شده برای شما قرار گرفته شده میتوانید با دانلود بازی بازی را دانلود کنید نظر در اخر یادتون نره.</p>
+                      <a class="download-btn" href="#">دانلود برنامه</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <div class="header-bottom-right">
+                      <!-- <img src="assets/images/iphone-group1.png" alt="iphone grpup img"> -->
+                      <img src="{% static 'apps/assets/images/Nexus-6-MockUp-group.png' %}" alt="iphone grpup img">
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </header>
+  <!-- End header section --> 
+
+  <!-- Start Features -->
+  <section id="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area">
+            <h2 class="title"><span> امکانات</span>بازی </h2>
+            <p>امکانات ماشین بازی برای شما </p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="features-area">
+            <div class="row">
+              <!-- Start features left -->
+              <div class="col-md-4">
+                <div class="features-left">
+                  <ul class="features-list features-list-left">
+                    <li class="wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                      <i class="fa fa-desktop"></i>
+                      <div class="features-content">
+                        <h4>کیفیت بی نظیر</h4>
+                        <p>یکی از با کیفیترین ماین است که میتوانید بازی کنید .</p>
+                      </div>
+                    </li>
+                    <li class="wow fadeInLeft" data-wow-duration="0.75s" data-wow-delay="0.75s">
+                      <i class="fa fa-edit"></i>
+                      <div class="features-content">
+                        <h4>سازگار با هر گوشی</h4>
+                        <p>با هر گوشی این بازی سازگاری کاملی دارد و به راحتی اجرا میشود .</p>
+                      </div>
+                    </li>
+                    <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                      <i class="fa fa-object-ungroup"></i>
+                      <div class="features-content">
+                        <h4>امنیت بالا</h4>
+                        <p>کرک سالم دارد و با ویروس کش های قوی تست شده اند با خیال راحت نصب کنید .</p>
+                      </div>
+                    </li>
+                    <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                      <i class="fa fa-flask"></i>
+                      <div class="features-content">
+                        <h4>به راحتی بازی کنید</h4>
+                        <p>به راحتی میتوانید بازی کنید و پیش نیازی لازم ندارد .</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End features left -->
+              <!-- Start features img -->
+              <div class="col-md-4">
+                <div class="feature-img wow fadeInUp">
+                  <img src="{% static 'apps/assets/images/nexus-6-single.png' %}" alt="iPhone mockup">
+                </div>
+              </div>
+              <!-- End features img -->
+              <!-- Start features right -->
+              <div class="col-md-4">
+                <div class="features-right">
+                  <ul class="features-list features-list-right">
+                    <li class="wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                      <i class="fa fa-rocket"></i>
+                      <div class="features-content">
+                        <h4>بدون نیاز به اینترنت</h4>
+                        <p>این بازی آفلاین است و میتوانید با خیال راحت بدون نیاز به اینترنت بازی کنید .</p>
+                      </div>
+                    </li>
+                    <li class="wow fadeInRight" data-wow-duration="0.75s" data-wow-delay="0.75s">
+                      <i class="fa fa-cogs"></i>
+                      <div class="features-content">
+                        <h4>همیشه قابل آپدیت</h4>
+                        <p>این بازی را همیشه بروزرسانی میکنیم و نسخه های جدیدی را قرار میدهیم . </p>
+                      </div>
+                    </li>
+                    <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+                      <i class="fa fa-heart"></i>
+                      <div class="features-content">
+                        <h4>فایل با آموزش</h4>
+                        <p>در فایل دانلود شده نحوه نصب دیتا و بازی کردن آن وجود دارد .</p>
+                      </div>
+                    </li>
+                    <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+                      <i class="fa fa-support"></i>
+                      <div class="features-content">
+                        <h4>پشتیبانی 24 ساعته</h4>
+                        <p>این بازی پشتیبانی میشود</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>   
+              <!-- End features right -->                 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Features -->
+
+  <!-- Start how it works -->
+  <section id="howit-works">
+    <div class="howit-works-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-area wow fadeInLeft">
+              <h2 class="title"><span>چگونه</span> کار می کند؟</h2>
+              <p>این بازی بدون احتیاج به برنامه های هک قابال اجرا است و میتوانید به راحتی آن را دانلود کنید . این بازی بصورت آنلاین اجرا نمیشود و ما سعی میکنیم نسخه آنلاین کرک شده این بازی را نیز در بروزرسانی های بعدی قرار دهیم .</p>
+            </div>
+          </div>  
+          <div class="col-md-12">
+            <div class="howit-works-video">
+              <iframe src="http://bing.com" width="428" height="276" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>                  
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End how it works -->
+
+  <!-- start pricing table -->
+  <section id="pricing-table">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area wow fadeInLeft">
+            <h2 class="title"><span>قیمت </span> تبلیغات</h2>
+            <p>با قیمت پایین میتوانید کسب و کار خودتان را تبلیغ کنید .</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="pricing-table-content">
+            <div class="row">
+              <!-- Start single plan -->
+              <div class="col-md-3 col-sm-6">                    
+                <div class="single-plan wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                  <div class="single-plan-head">
+                    <h5>ساده</h5>
+                    <p>100.000 تومان / <span>در ماه</span></p>
+                  </div>
+                  <div class="single-plan-content">
+                    <ul>
+                      <li>تبلیغ فقط در صفحه اصلی</li>
+                      <li>تضمین 90 درصدی</li>
+                      <li class="delete">تبلیغ رایگان در شبکه های اجتماعی</li>
+                      <li class="delete">تخفیف</li>
+                      <li>پشتیبانی همیشگی</li>
+                    </ul>
+                  </div>
+                  <div class="single-plan-bottom">
+                    <a class="signup-btn" href="http://mixdesigns.net">ثبت تبلیغات</a>
+                  </div>
+                </div>
+              </div>
+              <!-- End single plan -->
+              <!-- Start single plan -->
+              <div class="col-md-3 col-sm-6">
+                <div class="single-plan wow fadeInUp" data-wow-duration="0.75s" data-wow-delay="0.75s">
+                  <div class="single-plan-head">
+                    <h5>حرفه ای</h5>
+                    <p>250.000 تومان / <span>در ماه</span></p>
+                  </div>
+                  <div class="single-plan-content">
+                    <ul>
+                      <li>تبلیغ در 25 صفحه وبسایت</li>
+                      <li>تضمین 100 درصدی</li>
+                      <li>تبلیغ در کانال تلگرام و پیج اینستاگرام</li>
+                      <li class="delete">تخفیف</li>
+                      <li>پشتیبانی همیشگی</li>
+                    </ul>
+                  </div>
+                  <div class="single-plan-bottom">
+                    <a class="signup-btn" href="#">ثبت تبلیغات</a>
+                  </div>
+                </div>
+              </div>
+              <!-- End single plan -->
+              <!-- Start single plan -->
+              <div class="col-md-3 col-sm-6">
+                <div class="single-plan feature-price wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                  <div class="single-plan-head">
+                    <h5>اقتصادی</h5>
+                    <p>500.000 تومان / <span>در ماه</span></p>
+                  </div>
+                  <div class="single-plan-content">
+                    <ul>
+                      <li>تبلیغ در تمامی صفحات وبسایت</li>
+                      <li>تضمین 100 درصدی</li>
+                      <li>تبلیغ در اینستاگرام و تلگرام و دارای ایمیل اقتصادی</li>
+                      <li>با تخفیف</li>
+                      <li>پشتیبانی همیشگی</li>
+                    </ul>
+                  </div>
+                  <div class="single-plan-bottom">
+                    <a class="signup-btn" href="#">ثبت تبلیغات</a>
+                  </div>
+                </div>
+              </div>
+              <!-- End single plan -->
+              <!-- Start single plan -->
+              <div class="col-md-3 col-sm-6">
+                <div class="single-plan wow fadeInUp" data-wow-duration="1.25s" data-wow-delay="1.25s">
+                  <div class="single-plan-head">
+                    <h5>VIP</h5>
+                    <p>750.000 تومان / <span>در ماه</span></p>
+                  </div>
+                  <div class="single-plan-content">
+                    <ul>
+                      <li>تبلیغ در تمامی صفحات وبسایت</li>
+                      <li>تضمنین 100 درصدی</li>
+                      <li>تبلیغ در تمامی شبکه های اجتماعی موجود</li>
+                      <li class="delete">تخفیف</li>
+                      <li>پشتیبانی همیشگی</li>
+                    </ul>
+                  </div>
+                  <div class="single-plan-bottom">
+                    <a class="signup-btn" href="#">ثبت تبلیغات</a>
+                  </div>
+                </div>
+              </div>
+              <!-- End single plan -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End pricing table -->
+
+  <!-- Start screenshot -->
+  <section id="screenshot">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area wow fadeInUp">
+            <h2 class="title"><span>تصاویر</span>  بازی</h2>
+            <p>Drift max pro car</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="screenshots-area">
+            <ul class="screenshots-slide">
+              <li class="col-md-3 wow fadeInLeft">
+               <a class="fancybox" data-fancybox-group="gallery" href="{% static 'apps/assets/images/car3.png' %}"><img src="{% static 'apps/assets/images/car3.png' %}" alt="app screenshot">
+                  <div class="view-btn-area">
+                    <span class="fa fa-search view-btn"></span>
+                  </div>
+               </a>
+              </li>
+               <!--li class="col-md-3 wow fadeInLeft">
+                 <a class="fancybox" data-fancybox-group="gallery" href="{% static 'apps/assets/images/app-screenshot-popup.jpg' %}"><img src="{% static 'apps/assets/images/app-screenshot.jpg' %}" alt="app screenshot">
+                    <div class="view-btn-area">
+                      <span class="fa fa-search view-btn"></span>
+                    </div>
+                 </a>
+              </li>
+               <li class="col-md-3 wow fadeInLeft">
+                 <a class="fancybox" data-fancybox-group="gallery" href="{% static 'apps/assets/images/app-screenshot-popup.jpg' %}"><img src="{% static 'apps/assets/images/app-screenshot.jpg' %}" alt="app screenshot">
+                  <div class="view-btn-area">
+                    <span class="fa fa-search view-btn"></span>
+                  </div>
+               </a>
+              </li>
+               <li class="col-md-3 wow fadeInLeft">
+                 <a class="fancybox" data-fancybox-group="gallery" href="{% static 'apps/assets/images/app-screenshot-popup.jpg' %}"><img src="{% static 'apps/assets/images/app-screenshot.jpg' %}" alt="app screenshot">
+                  <div class="view-btn-area">
+                    <span class="fa fa-search view-btn"></span>
+                  </div>
+               </a>
+              </li>
+              <li class="col-md-3 wow fadeInLeft">
+                 <a class="fancybox" data-fancybox-group="gallery" href="{% static 'apps/assets/images/app-screenshot-popup.jpg' %}"><img src="{% static 'apps/assets/images/app-screenshot.jpg' %}" alt="app screenshot">
+                  <div class="view-btn-area">
+                    <span class="fa fa-search view-btn"></span>
+                  </div>
+               </a>
+              </li>
+               <li class="col-md-3 wow fadeInLeft">
+                 <a class="fancybox" data-fancybox-group="gallery" href="{% static 'apps/assets/images/app-screenshot-popup.jpg' %}"><img src="{% static 'apps/assets/images/app-screenshot.jpg' %}" alt="app screenshot">
+                  <div class="view-btn-area">
+                    <span class="fa fa-search view-btn"></span>
+                  </div>
+               </a>
+              </li>
+               <li class="col-md-3 wow fadeInLeft">
+                 <a class="fancybox" data-fancybox-group="gallery" href="{% static 'apps/assets/images/app-screenshot-popup.jpg' %}"><img src="{% static 'apps/assets/images/app-screenshot.jpg' %}" alt="app screenshot">
+                  <div class="view-btn-area">
+                    <span class="fa fa-search view-btn"></span>
+                  </div>
+               </a>
+              </li>
+               <li class="col-md-3 wow fadeInLeft">
+                 <a class="fancybox" data-fancybox-group="gallery" href="{% static 'apps/assets/images/app-screenshot-popup.jpg' %}"><img src="{% static 'apps/assets/images/app-screenshot.jpg' %}" alt="app screenshot" -->
+                  <div class="view-btn-area">
+                    <span class="fa fa-search view-btn"></span>
+                  </div>
+               </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End screenshot -->
+
+  <!-- Start download app -->
+  <section id="download-app">
+    <div class="download-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-area wow fadeInUp">
+              <h2 class="title"><span>دانلود</span> اپلیکیشن</h2>
+              <p>برای مشاهده برنامه های دیگر روی نسخه سیستم عامل آن کلیک کنید</p>
+            </div>
+          </div>
+          <!-- Start download app content -->
+          <div class="col-md-12">
+            <div class="download-app-content">
+              <!-- Start single download -->
+              <a class="single-download wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s" href="#">
+                <div class="download-icon">
+                  <i class="fa fa-windows"></i>
+                </div>
+                <div class="download-content">
+                  <p>فعال بر روی</p>
+                  <span>Windows 10,7,8</span>
+                </div>
+              </a>
+              <!-- Start single download -->
+              <a class="single-download wow fadeInLeft" data-wow-duration="0.75s" data-wow-delay="0.75s" href="#">
+                <div class="download-icon">
+                  <i class="fa fa-play"></i>
+                </div>
+                <div class="download-content">
+                  <p>فعال بر روی</p>
+                  <span>Android</span>
+                </div>
+              </a>
+              <!-- Start single download -->
+              <a class="single-download wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s" href="#">
+                <div class="download-icon">
+                  <i class="fa fa-apple"></i>
+                </div>
+                <div class="download-content">
+                  <p>فعال بر روی</p>
+                  <span>Ios</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End download app -->
+
+  <!-- Start testimonial -->
+  <section id="testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area wow fadeInLeft">
+            <h2 class="title"><span>راهنمای</span> دانلود</h2>
+            <p>راهنمای های زیر برای اموزش دانلود برنامه های موجود در وبسایت میباشد . اسلاید اخر راهنمای تبلیغات میباشد.</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="testimonial-slider">
+            <!-- single slide -->
+            <div class="testimonial-single-slide">               
+              <img class="testi-avatar" src="{% static 'apps/assets/images/testi1.jpg' %}" alt="testimonial img">
+              <p class="testi-name">راهنمای دانلود</p>
+              <p class="testi-company">instagram.com</p>
+              <p class="testi-text">برای دانلود هر برنامه برای هر نسخه روی علامت دانلود کلیک کنید.</p>
+            </div>
+            <!-- single slide -->
+            <div class="testimonial-single-slide">               
+              <img class="testi-avatar" src="{% static 'apps/assets/images/testi3.jpg' %}" alt="testimonial img">
+              <p class="testi-name">راهنمای نصب</p>
+              <p class="testi-company">instagram.com</p>
+              <p class="testi-text">برای هر برنامه یک اموزش قرار دهده شده است . </p>
+            </div>
+            <!-- single slide -->
+            <div class="testimonial-single-slide">               
+              <img class="testi-avatar" src="{% static 'apps/assets/images/testi2.jpg' %}" alt="testimonial img">
+              <p class="testi-name">نحوه تبلیغات</p>
+              <p class="testi-company">instagram.com</p>
+              <p class="testi-text">بعد از خرید پنل تبلیغاتی در خواست شما به پشتیبانی فرستاده میشود و برای شما پیامک جهت تبلیغات خواهد امد و نشان دهنده تبلیغ شدن کسب و کار شما است</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>      
+  </section>
+  <!-- End testimonial -->
+
+  <!-- Start subscribe -->
+  <section id="subscribe">
+    <div class="download-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-area wow fadeInUp">
+              <h2 class="title"><span>اشتراک</span>  خبرنامه</h2>
+              <p>برای با خبر شدن از برنامه های تازه میتوانید ایمیل خودتان را ثبت کنید.</p>
+            </div>
+          </div>
+          <!-- Start download app content -->
+          <div class="col-md-12">
+            <div class="subscribe-content wow fadeInLeft">
+              <!--form action="" method="post" class="subcr-form">
+                {% csrf_token %}
+                <i class="fa fa-envelope-o"></i>
+                <input type="mail" name="mail" required="" placeholder="نام شما">
+                <button type="submit" class="subcr-btn">اشتراک</button>
+              </form -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End download app -->
+
+  <!-- Start contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area">
+              <h2 class="title"><span>ارتباط</span> با ما</h2>
+              <p>میتوانید از این قسمت انتقادات و پیشنهاد های خود را برای ما ارسال کنید و میتوانید برنامه های جدید را پیشنهاد کنید</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="contact-area">
+            <form action="" method="post" class="contact-form">
+              {% csrf_token %}
+              <div class="form-group">                  
+                <input type="text" name="name" class="form-control" required="" placeholder="نام شما">
+              </div>
+              <div class="form-group">                  
+                <input type="email" name="email" class="form-control" required="" placeholder="ایمیل">
+              </div>
+              <div class="form-group">                  
+                <textarea name="text" class="form-control" rows="3" required="" placeholder="پیام شما"></textarea>
+              </div>
+              <div class="send-area">
+                <button type="submit" class="send-btn">ارسال پیام</button>
+              </div>  
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End contact -->
+
+  <!-- Start footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-social">
+            <a href="https://www.instagram.com/app_land.ir"><i class="fa fa-instagram"></i></a>
+            <!--a href="#"><i class="fa fa-"></i></a-->
+            <!--a href="#"><i class="fa fa-google-plus"></i></a-->
+            <!--a href="#"><i class="fa fa-linkedin"></i></a-->
+          </div>
+          <div class="footer-text">
+            <p>طراحی و بنیان گذاری شده توسط <a href="https://www.instagram.com/app_land.ir">تیم اپ لند</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End -->
+
+
+  <!-- jQuery library -->
+  <script src="{% static 'apps/assets/js/jquery.min.js' %}"></script>    
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="{% static 'apps/assets/js/bootstrap.js' %}"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="{% static 'apps/assets/js/slick.js' %}"></script>   
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="{% static 'apps/assets/js/jquery.fancybox.pack.js' %}"></script>
+  <!-- Wow animation -->
+  <script type="text/javascript" src="{% static 'apps/assets/js/wow.js' %}"></script> 
+  <!-- Off-canvas Menu -->   
+  <script src="{% static 'apps/assets/js/classie.js' %}"></script>
+ 
+  <!-- Custom js -->
+  <script type="text/javascript" src="{% static 'apps/assets/js/custom.js' %}"></script>
+    
+  </body>
+</html>

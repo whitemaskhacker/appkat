@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>اپکت : 404</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="{% static 'apps/assets/images/favicon.ico' %}"/>
+    <!-- Font Awesome -->
+    <link href="{% static 'apps/assets/css/font-awesome.css' %}" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="{% static 'apps/assets/css/bootstrap.css' %}" rel="stylesheet">    
+    <link href="{% static 'apps/assets/css/bootstrap-rtl.min.css' %}" rel="stylesheet">    
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="{% static 'apps/assets/css/slick.css' %}"/> 
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="{% static 'apps/assets/css/jquery.fancybox.css' %}" type="text/css" media="screen" /> 
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'apps/assets/css/animate.css' %}"/>  
+     <!-- Theme color -->
+    <link id="switcher" href="{% static 'apps/assets/css/theme-color/default.css' %}" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="{% static 'apps/style.css' %}" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body> 
+  <!-- BEGAIN PRELOADER -->
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  <!-- END PRELOADER -->
+
+  <!-- Start error page -->
+  <section id="error">
+    <div class="container">   
+      <div class="error-area">     
+        <div class="error-group">
+          <h1><span><strong>4</strong></span><span><strong>0</strong></span><span><strong>4</strong></span></h1>
+          <h2>خطا ! <span>صفحه وجود ندارد</span></h2>
+        </div>
+        <p>صفحه مورد نظر پیدا نشد.</p>
+        <p class="home-btn"><a href="{% url 'home' %}">« بازگشت</a> / <a href="{% url 'home' %}">صفحه نخست »</a></p>      
+      </div>    
+    </div>
+  </section>
+  <!-- End error page -->
+    
+  <!-- Start footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-social">
+            <a href="https://www.instagram.com/app_kat.ir"><i class="fa fa-instagram"></i></a>
+            <!--a href="#"><i class="fa fa-twitter"></i></a-->
+            <!--a href="#"><i class="fa fa-google-plus"></i></a-->
+            <!--a href="#"><i class="fa fa-linkedin"></i></a-->
+          </div>
+          <div class="footer-text">
+            <p>فارسی سازی و ویرایش <a href="https://www.instagram.com/app_kat.ir">تیم اپکت</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End -->
+
+
+  <!-- jQuery library -->
+  <script src="{% static 'apps/assets/js/jquery.min.js' %}"></script>    
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="{% static 'apps/assets/js/bootstrap.js' %}"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="{% static 'apps/assets/js/slick.js' %}"></script>   
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="{% static 'apps/assets/js/jquery.fancybox.pack.js' %}"></script>
+  <!-- Wow animation -->
+  <script type="text/javascript" src="{% static 'apps/assets/js/wow.js' %}"></script> 
+  <!-- Off-canvas Menu -->   
+  <script src="{% static 'apps/assets/js/classie.js' %}"></script>
+ 
+  <!-- Custom js -->
+  <script type="text/javascript" src="{% static 'apps/assets/js/custom.js' %}"></script>
+    
+  </body>
+</html>
